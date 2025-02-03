@@ -1,94 +1,166 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Эксклюзивные туры по Финляндии и Эстонии - уникальные маршруты, нетуристические места">
+  <meta property="og:title" content="Путешествия по Финляндии и Эстонии">
+  <meta property="og:image" content="images/logo.jpg">
   <title>Путешествия по Финляндии и Эстонии</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="main-container">
-    <header class="header">
-      <div class="logo-bar">
-        <img src="images/logo.jpg" alt="Логотип" class="logo" />
+  <header class="header" role="banner">
+    <div class="logo-bar">
+      <img src="images/logo.jpg" 
+           alt="Логотип компании" 
+           class="logo"
+           width="150"
+           height="60"
+           loading="eager">
+    </div>
+  </header>
+  <section class="hero" aria-label="Главное предложение">
+    <div class="hero-content">
+      <img src="images/hero.jpg"
+           alt="Живописный пейзаж Финляндии"
+           class="hero-image"
+           width="1200"
+           height="400"
+           loading="eager">
+      <div class="hero-text">
+        <h1>Добро пожаловать в незабываемое путешествие!</h1>
+        <p>Откройте для себя уникальные маршруты между Хельсинки и Таллином</p>
       </div>
-    </header>
+    </div>
+  </section>
 
-    <section class="hero">
-      <div class="hero-content">
-        <img src="images/hero-image.jpg" alt="Пейзаж" class="hero-image" />
-        <div class="hero-text">
-          <h1>Добро пожаловать в незабываемое путешествие!</h1>
-          <p>Исследуйте самые красивые места Кипра с нами.</p>
+  <section class="details" aria-labelledby="tour-details">
+    <div class="details-info">
+      <p><strong>Продолжительность:</strong><br>4-8 часов</p>
+      <p><strong>Расположение:</strong><br>Финляндия и Эстония</p>
+      <p><strong>Цены от:</strong><br>€69</p>
+    </div>
+  </section>
+
+  <main class="main-container">
+    
+
+    
+
+    <div class="content-wrapper">
+      <section class="alert-box" role="alert" aria-label="Важная информация">
+        <h2>ВНИМАНИЕ:</h2>
+        <p>Специально для людей, которые хотят посетить самые интересные и красивые <span class="highlight">аутентичные нетуристические</span> места Финляндии и Эстонии и получить информацию, <span class="highlight">которую не найдут в Интернете</span>, путешествуя только со своими друзьями и знакомыми.</p>
+        <p><span class="underline">Без необходимости</span> арендовать машину.</p>
+        <p><span class="underline">Без необходимости</span> тратить время на чтение сухой истории...</p>
+      </section>
+
+      <section class="tours" aria-labelledby="popular-routes">
+        <h2 id="popular-routes" class="visually-hidden">Популярные маршруты</h2>
+        <article class="tour-card">
+          <img src="images/estFin.jpg"
+               alt="Маршрут Хельсинки-Эстония"
+               class="tour-image"
+               width="300"
+               height="200"
+               loading="lazy">
+          <h3>Хельсинки — Эстония за один день</h3>
+          <p class="tour-description">Посетите Хельсинки и отправьтесь на пароме в Эстонию</p>
+          <span class="tour-price">150 €</span>
+          <button class="tour-button" aria-label="Подробнее о туре Хельсинки-Эстония">Подробнее</button>
+        </article>
+
+        <article class="tour-card">
+          <img src="images/nFinland.jpg"
+               alt="Северная Финляндия и Лапландия"
+               class="tour-image"
+               width="300"
+               height="200"
+               loading="lazy">
+          <h3>Северная Финляндия и Лапландия</h3>
+          <p class="tour-description">Уникальный тур в сказочную Лапландию</p>
+          <span class="tour-price">300 €</span>
+          <button class="tour-button" aria-label="Подробнее о туре в Лапландию">Подробнее</button>
+        </article>
+      </section>
+
+      <section class="gallery" aria-labelledby="photo-gallery">
+        <h2 id="photo-gallery">Фотогалерея</h2>
+        <div class="gallery-container">
+          <figure class="gallery-item">
+            <img src="images/ima1.webp"
+                 alt="Архитектура Таллина"
+                 class="gallery-image"
+                 width="250"
+                 height="200"
+                 loading="lazy">
+            <figcaption class="visually-hidden">Старый город Таллина</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/ima2.webp"
+                 alt="Финские озёра"
+                 class="gallery-image"
+                 width="250"
+                 height="200"
+                 loading="lazy">
+            <figcaption class="visually-hidden">Озёрный край Финляндии</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/ima3.jpg"
+                 alt="Северное сияние"
+                 class="gallery-image"
+                 width="250"
+                 height="200"
+                 loading="lazy">
+            <figcaption class="visually-hidden">Северное сияние в Лапландии</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/ima4.jpeg"
+                 alt="Паромное сообщение"
+                 class="gallery-image"
+                 width="250"
+                 height="200"
+                 loading="lazy">
+            <figcaption class="visually-hidden">Паром между Хельсинки и Таллином</figcaption>
+          </figure>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+  </main>
 
-    <section class="details">
-      <h2>Детали тура</h2>
-      <div class="details-info">
-        <p><strong>Продолжительность:</strong><br>4-8 часов</p>
-        <p><strong>Расположение:</strong><br>Весь Кипр</p>
-        <p><strong>Цены от:</strong><br>€69</p>
-      </div>
-    </section>
-
-    <section class="tours">
-      <h2>Популярные маршруты</h2>
-      <div class="tour-card">
-        <img src="https://via.placeholder.com/300x200" alt="Хельсинки — Эстония за один день" class="tour-image" />
-        <h3 class="tour-title">Хельсинки — Эстония за один день</h3>
-        <p class="tour-description">Посетите Хельсинки и отправьтесь на пароме в Эстонию.</p>
-        <span class="tour-price">150 €</span>
-        <button class="tour-button">Подробнее</button>
-      </div>
-
-      <div class="tour-card">
-        <img src="https://via.placeholder.com/300x200" alt="Северная Финляндия и Лапландия" class="tour-image" />
-        <h3 class="tour-title">Северная Финляндия и Лапландия</h3>
-        <p class="tour-description">Уникальный тур в сказочную Лапландию.</p>
-        <span class="tour-price">300 €</span>
-        <button class="tour-button">Подробнее</button>
-      </div>
-    </section>
-
-    <section class="gallery">
-      <h2>Фотогалерея</h2>
-      <div class="gallery-container">
-        <img src="images/ima1.webp" alt="Красивый пейзаж 1" class="gallery-image" />
-        <img src="images/ima2.webp" alt="Красивый пейзаж 2" class="gallery-image" />
-        <img src="images/ima3.jpg" alt="Красивый пейзаж 3" class="gallery-image" />
-        <img src="images/ima4.jpeg" alt="Красивый пейзаж 4" class="gallery-image" />
-      </div>
-    </section>
-
-    <footer class="footer">
+  <footer class="footer" role="contentinfo">
+    <div class="content-wrapper">
       <p>&copy; 2025 Путешествия по Финляндии и Эстонии. Все права защищены.</p>
-    </footer>
-  </div>
-  <button id="scrollToTopBtn" class="scroll-to-top">&#8679;</button>
-</body>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-  
-    window.addEventListener("scroll", function () {
-      if (window.scrollY > 300) {
-        scrollToTopBtn.classList.add("show");
-      } else {
-        scrollToTopBtn.classList.remove("show");
-      }
-    });
-  
-    scrollToTopBtn.addEventListener("click", function () {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+    </div>
+  </footer>
+
+  <button id="scrollToTopBtn" 
+          class="scroll-to-top" 
+          aria-label="Наверх страницы"
+          title="Вернуться к началу">
+    &#8679;
+  </button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      
+      window.addEventListener("scroll", function() {
+        if (window.scrollY > 300) {
+          scrollToTopBtn.classList.add("show");
+        } else {
+          scrollToTopBtn.classList.remove("show");
+        }
+      });
+
+      scrollToTopBtn.addEventListener("click", function() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
       });
     });
-  });
   </script>
-  
-
-
+</body>
 </html>
